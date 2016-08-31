@@ -1,0 +1,41 @@
+header{
+	height:70px;
+	padding-top:10px;
+	background-color: #f5f5f5;
+}
+.header-bd{
+	padding:0 30px;
+}
+.logo{
+	float:left;
+}
+.logo a{
+	font:bold 30px "寰蒋闆呴粦";
+	color: #121212;
+	line-height:60px;
+}
+.login-area{
+	float:right;
+}
+.login-area a{
+	display: block;
+	float:left;
+	font:normal 16px "寰蒋闆呴粦";
+	color:#5e5e5e;
+	line-height:60px;
+	height: 60px;
+	margin:0 10px;
+}
+.login-area a:hover{
+	color:#1d7ad9;
+}
+footer{
+	height: 40px;
+	border-top: solid 1px #ddd;
+	padding-top: 5px;
+	text-align: center;
+	background-color: #F0F0F0;
+}
+footer p{
+	padding-top:10px;
+}
