@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页</title>
+	<link rel="stylesheet" href="style/header.css" type="text/css">
+	<link rel="stylesheet" href="style/index.css" type="text/css">
+	<link rel="stylesheet" href="style/reset.css" type="text/css">
+	<link rel="stylesheet" href="style/login.css" type="text/css">
+	<link rel="stylesheet" href="style/regist.css" type="text/css">
+</head>
+<body>
+	<header>
+		<div class="header-bd">
+			<div class="logo">
+				<a href="index.html">民大二手</a>
+			</div>
+			<nav id="login-area" class="login-area">
+				<a href="#login" id="js-signin-btn">登录</a>
+				<a href="#regist" id="js-signup-btn">注册</a>
+			</nav>
+			<nav id="login-success-area" class="login-area invisible">
+				<a id="login-username" href=""></a>
+				<a id="login-exit" href="#">退出</a>
+			</nav>
+		</div>
+	</header>
+	<div>
+		<div class="top-bd">
+			<div class="search">
+				<input id="search-area" type="text" placeholder="输入想要找的物品" autocomplete="off">
+				<input id="search-submit" type="button" value="搜索">
+			</div>
+			<a id="publish" href="">发布二手</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="index-center">
+			<div class="index-line">
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="index-line">
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="index-line">
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="index-line">
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="index-line">
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+				<div class="index-message">
+					<img src="" alt="">
+					<p></p>
+					<a href=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mask"></div>
+	<div id="signin" class="invisible">
+		<div class="signin-header">
+			<h1><span>登录</span></h1>
+			<span class="close-ico"></span>
+		</div>
+		<div class="signin-body">
+			<div>
+				<p class="tips" id="signin-tips"></p>
+				<div id="signin-form">
+					<div>
+						<input class="input-field" id="username" type="text" maxlength="16" placeholder="请输入用户名" autocomplete="off">
+						<p class="tips" id="username-tips"></p>
+					</div>
+					<div>
+						<input class="input-field" id="password" type="password" maxlength="16" placeholder="6-16位密码，区分大小写，不能用空格" autocomplete="off">
+						<p class="tips" id="password-tips"></p>
+					</div>
+					<div>
+						<a href="#regist" id="regist">立即注册</a>
+						<a href="#" id="forget-pw">忘记密码</a>
+					</div>
+					<div>
+						<input type="button" id="signin-btn" value="登录">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="signup" class="invisible">
+		<div class="signup-header">
+			<h1><span>注册</span></h1>
+			<span class="close-ico"></span>
+		</div>
+		<div class="signup-body">
+			<div id="regist-success">注册成功</div>
+			<div id="regist-main">
+				<div class="signup-body-line">
+					<p class="signup-body-name">用户名：&nbsp</p>
+					<input id="regist-username" class="signup-body-input input-field" type="text" maxlength="16" placeholder="请输入用户名" autocomplete="off">
+					<p id="regist-username-tips" class="tips signup-tips"></p>
+				</div>
+				<div class="signup-body-line">
+					<p class="signup-body-name">密&nbsp码：&nbsp</p>
+					<input id="regist-password" class="signup-body-input input-field" type="password" maxlength="16" placeholder="6-16位密码，区分大小写，不能用空格" autocomplete="off">
+					<p id="regist-password-tips" class="tips signup-tips"></p>
+				</div>
+				<div class="signup-body-line">
+					<p class="signup-body-name">确认密码：</p>
+					<input id="regist-password2" class="signup-body-input input-field" type="password" maxlength="16" placeholder="请再输入一遍密码" autocomplete="off">
+					<p id="regist-password2-tips" class="tips signup-tips"></p>
+				</div>
+				<div class="signup-body-line">
+					<p class="signup-body-name">学&nbsp号：&nbsp</p>
+					<input id="regist-number" class="signup-body-input input-field" type="text" maxlength="16" placeholder="请输入您的学号" autocomplete="off">
+					<p id="regist-number-tips" class="tips signup-tips"></p>
+				</div>
+				<div class="signup-body-line">
+					<p class="signup-body-name">手机号：&nbsp</p>
+					<input id="regist-tel" class="signup-body-input input-field" type="text" placeholder="请输入您的手机号" autocomplete="off">
+					<p id="regist-tel-tips" class="tips signup-tips"></p>
+				</div>
+				<div class="signup-body-line">
+					<p class="signup-body-name">邮&nbsp箱：&nbsp</p>
+					<input id="regist-mail" class="signup-body-input input-field" type="text" placeholder="请输入您的邮箱" autocomplete="off">
+					<p id="regist-mail-tips" class="tips signup-tips"></p>
+				</div>
+				<div>
+					<input type="button" id="signup-btn" value="注册">
+				</div>
+			</div>
+			<div>
+				<input type="button" id="login-btn" value="立即登录">
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>2016-7 版权信息</p>
+	</footer>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/regist.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
