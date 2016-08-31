@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布商品</title>
+	<link rel="stylesheet" href="style/header.css" type="text/css">
+	<link rel="stylesheet" href="style/reset.css" type="text/css">
+	<link rel="stylesheet" href="style/publish.css" type="text/css">
+</head>
+<body>
+	<header>
+		<div class="header-bd">
+			<div class="logo">
+				<a href="index.html">民大二手</a>
+			</div>
+			<nav id="login-success-area" class="login-area">
+				<a id="login-username" href=""></a>
+				<a id="login-exit" href="index.html">退出</a>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+		<div class="publish-header">
+			<div class="publish-title">发布商品</div>
+			<img src="img/black-wave.png" alt="">
+		</div>
+		<form id="publish-form" action="publish" enctype="multipart/form-data" method="post" class="publish-center">
+			<div class="publish-image-can">
+				<span id="publish-image-icon"></span>
+				<input id="publish-image" type="file" accept="image/*" name="image">
+			</div>
+			<div id="publish-my-image">
+				<div id="publish-image-exit">重新上传图片</div>
+				<img id="publish-myimage" src="">
+				<p></p>
+			</div>
+			<div class="publish-line">
+				<div class="publish-name">
+					<span>商品名称</span>
+				</div>
+				<div class="publish-input">
+					<input id="publish-name" name="name" type="text" placeholder="最多25个字">
+					<p class="tips"></p>
+				</div>
+			</div>
+			<div class="publish-line">
+				<div class="publish-name publish-textarea-name">
+					<span>商品详情</span>
+				</div>
+				<div class="publish-input">
+					<textarea id="publish-message" name="detail" type="text" placeholder="填写商品信息，至少15个字"></textarea>
+					<p class="tips"></p>
+				</div>
+			</div>
+			<div class="publish-line">
+				<div class="publish-name">
+					<span>价格</span>
+				</div>
+				<div class="publish-input">
+					<input id="publish-price" name="price" type="text" id="price">
+					<p class="tips"></p>
+				</div>
+			</div>
+			<div class="publish-line">
+				<div class="publish-name">
+					<span>分类</span>
+				</div>
+				<div class="publish-input">
+					<div id="select-box">
+						<input id="publish-classify" class="myselect" type="text" name="type" value="请选择" readOnly="true">
+						<ul>
+							<li>服装配饰</li>
+							<li>图书教材</li>
+							<li>运动健身</li>
+							<li>数码产品</li>
+							<li>生活娱乐</li>
+							<li>其他二手</li>
+						</ul>
+					</div>
+					<p class="tips"></p>
+				</div>
+			</div>
+			<div class="publish-line">
+				<div class="publish-name">
+					<span>手机</span>
+				</div>
+				<div class="publish-input">
+					<input id="publish-tel" name="tel" type="text">
+					<p class="tips"></p>
+				</div>
+			</div>
+			<button id="publish-btn">马上发布</button>
+		</form>
+	</div>
+	<footer>
+		<p>2016-7 版权信息</p>
+	</footer>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/publish.js"></script>
+</body>
+</html>
